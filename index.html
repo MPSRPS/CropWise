@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Crop Recommendation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Crop Recommendation</h1>
+    <form id="cropForm">
+      <label>Nitrogen (kg/ha)<input type="number" name="nitrogen" required /></label>
+      <label>Phosphorus (kg/ha)<input type="number" name="phosphorus" required /></label>
+      <label>Potassium (kg/ha)<input type="number" name="potassium" required /></label>
+      <label>Soil pH<input type="number" name="ph" step="0.1" required /></label>
+      <label>Rainfall (mm)<input type="number" name="rainfall" required /></label>
+      <label>City<input type="text" name="city" required /></label>
+      <button type="submit">Get Recommendation</button>
+    </form>
+    <div id="result"></div>
+  </div>
+   <!-- ✅ First load env.js -->
+  <script src="env.js"></script>
+  <!-- ✅ Then load script.js that uses ENV -->
+  <script src="script.js"></script>
+</body>
+</html>
